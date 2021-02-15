@@ -1,4 +1,4 @@
-package bank_0202;
+package bank;
 
 
 import java.util.List;
@@ -14,8 +14,8 @@ public class Client {
 		private String address; //주소
 		private String bankBookNumber; //예금 통장 번호
 		private double money; // 예금 통장 잔액
-		private String loanBankBookNumber;//대출 통장 번호
-		private double loanMoney; //대출 통장 잔액
+//		private String loanBankBookNumber;//대출 통장 번호
+//		private double loanMoney; //대출 통장 잔액
 		
 		//getter, setter
 		public String getName() {
@@ -39,18 +39,24 @@ public class Client {
 		public void setPhoneNumber(String phoneNumber) {
 			this.phoneNumber = phoneNumber;
 		}
+		public String getPhoneNumber() {
+			return phoneNumber;
+		}
 		public void setAddress(String address) {
 			this.address = address;
+		}
+		public String getAddress() {
+			return address;
 		}
 		public void setMoney(double money) {
 			this.money = money;
 		}
-		public String getLoanBankBookNumber() {
-			return loanBankBookNumber;
-		}
-		public void setLoanBankBookNumber(String loanBankBookNumber) {
-			this.loanBankBookNumber = loanBankBookNumber;
-		}
+//		public String getLoanBankBookNumber() {
+//			return loanBankBookNumber;
+//		}
+//		public void setLoanBankBookNumber(String loanBankBookNumber) {
+//			this.loanBankBookNumber = loanBankBookNumber;
+//		}
 		public void setBankBookNumber(String bankBookNumber) {
 			this.bankBookNumber = bankBookNumber;
 		}
@@ -60,11 +66,11 @@ public class Client {
 		public double getMoney() {
 			return money;
 		}
-		public double getLoanMoney() {
-			return loanMoney;
-		}
-		public void setLoanMoney(double loanMoney) {
-			this.loanMoney = loanMoney;
-		}
+//		public double getLoanMoney() {
+//			return loanMoney;
+//		}
+//		public void setLoanMoney(double loanMoney) {
+//			this.loanMoney = loanMoney;
+//		}
 		
 }
